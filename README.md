@@ -31,6 +31,7 @@ The purpose of this task is to apply an Adaptive LMS filter to remove DC noise a
 2. **LMS Filtering**: The noisy ECG signal is then filtered using the Adaptive LMS filter, and the results are saved to `lms-filtered-ecg.dat`.
 
 3. **Filtered Signal Storage**: Both FIR-filtered and LMS-filtered ECG signals are stored in separate lists for further analysis.
+   ![LMS](image-files/comparison-adaptive-lms-with-no-lms-2.svg)
 
 #### Results:
 - **Figure 4**: ECG signal after FIR filtering.
@@ -42,6 +43,7 @@ The final task is to detect the R-peaks in the filtered ECG signal and calculate
 
 #### Procedure:
 1. **R-Peak Detection**: The `detect_r_peaks()` function is used to detect R-peaks in the Adaptive LMS filtered ECG signal. The function applies a peak detection algorithm that checks if a sample is higher than both its neighbors and above a threshold.
+![Alt text](image-files/momentary-heart-rate.svg)
 
 2. **Heart Rate Calculation**: The RR intervals (time between successive R-peaks) are calculated, and the heart rate is computed by converting the RR intervals to beats per minute (BPM).
 
