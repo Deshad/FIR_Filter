@@ -1,5 +1,5 @@
 # ECG Signal Filtering and R-Peak Detection
-![Alt text](path/to/your/image.png)
+![Filtering](image-files/fir-filtering.svg)
 ## Introduction
 
 In this assignment, two ECG signal datasets are provided: one recorded lying down with electrodes on the hip/shoulder, and the other recorded standing with electrodes on the ankles and wrists. The primary objective is to clean the ECG signals by removing noise using Finite Impulse Response (FIR) filters and Adaptive Least Mean Square (LMS) filters. Additionally, R-peak detection is required by using the R-peak template from the cleaned ECG signal.
